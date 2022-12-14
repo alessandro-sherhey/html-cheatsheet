@@ -9,16 +9,24 @@
 
 <body>
     <nav>
-
+        <a href="#basicStructure" title="Basics for starting writing HTML code.">Basic Structure</a>
+        <a href="#textStuff" title="Headings, text formatting and more.">Text Stuff</a>
+        <a href="#" title="Ordered and unordered lists to make text in your website more organized.">Lists</a>
+        <a href="#" title="Perfect for organizing data.">Tables</a>
+        <a href="#" title="Prepare your website for styling with CSS.">Advanced Structure</a>
+        <a href="#" title="Increase your ranking in the SEO and make your website more accessible to everyone.">Semantic HTML</a>
     </nav>
     <header>
         <h1>HTML Cheatsheet</h1>
         <h6>By Alessandro Sherhey</h6>
-        <p>This website contains the most important tags you need while writing HTML code.</p>
+        <p>
+            This website contains the most important tags you need while writing HTML code. Every tag is inside a card, to possibly make
+            things easier to find and understand.
+        </p>
     </header>
     <main>
         <h2>Basic Structure</h2>
-        <div class="container">
+        <div class="container" id="basicStructure">
             <section>
                 <h3>&lt;!DOCTYPE html&gt;</h3>
                 <p>
@@ -49,7 +57,7 @@
         </div>
 
         <h2>Headings</h2>
-        <div class="container">
+        <div class="container" id="textStuff">
             <section>
                 <h3>&lt;h1&gt;</h3>
                 <p>Headings can have 6 different tags. The first (this one) is the biggest heading while the last is the
@@ -76,9 +84,68 @@
                 <p>The smallest tag of all.</p>
             </section>
         </div>
-        <h2>
 
-        </h2>
+        <h2>Text Formatting</h2>
+        <div class="container">
+            <section>
+                <h3>&lt;strong&gt;</h3>
+                <p>This tag makes text bold. <strong>Like this</strong>.</p>
+            </section>
+            <section>
+                <h3>&lt;em&gt;</h3>
+                <p>This one makes text <em>italic</em>.</p>
+            </section>
+            <section>
+                <h3>&lt;u&gt;</h3>
+                <p>This gives text an <u>underline</u>.</p>
+            </section>
+            <section>
+                <h3>&lt;sub&gt;</h3>
+                <p>
+                    This tag is for making text subscript. It can be useful to write scientific formulas. Like H<sub>2</sub>O.
+                </p>
+            </section>
+            <section>
+                <h3>&lt;sup&gt;</h3>
+                <p>And this is the opposite of subscript. It makes text <sup>superscript</sup>.</p>
+            </section>
+        </div>
+
+        <h2>Lists</h2>
+        <div class="container">
+            <section>
+                <h3>&lt;ul&gt;</h3>
+                <p>
+                    This tag is useful to make lists that don't necessarily need to have every element ordered. "ul" stands
+                    for "Unordered List". It just adds a point to every element of the list, like:<br>
+                    • Wake up<br>
+                    • Eat<br>
+                    • Go to sleep
+                </p>
+            </section>
+            <section>
+                <h3>&lt;ol&gt;</h3>
+                <p>
+                    This tag, instead of the previous one, makes ordered lists. The lists are by default ordered with numbers,
+                    like:<br>
+                    1. Wake up<br>
+                    2. Eat<br>
+                    3. Go to sleep<br>
+                </p>
+            </section>
+            <section>
+                <h3>&lt;li&gt;</h3>
+                <p>
+                    This tag is essential to add elements to lists. Every list item needs this tag. For example, the code for the
+                    list shown before would be:<br>
+                    &lt;ol&gt;<br>
+                    &lt;li&gt;Wake up&lt;/li&gt;<br>
+                    &lt;li&gt;Eat&lt;/li&gt;<br>
+                    &lt;li&gt;Go to sleep&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </p>
+            </section>
+        </div>
     </main>
 </body>
 
