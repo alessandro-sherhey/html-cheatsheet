@@ -11,22 +11,21 @@
     <nav>
         <a href="#basicStructure" title="Basics for starting writing HTML code.">Basic Structure</a>
         <a href="#textStuff" title="Headings, text formatting and more.">Text Stuff</a>
-        <a href="#" title="Ordered and unordered lists to make text in your website more organized.">Lists</a>
-        <a href="#" title="Perfect for organizing data.">Tables</a>
-        <a href="#" title="Prepare your website for styling with CSS.">Advanced Structure</a>
-        <a href="#" title="Increase your ranking in the SEO and make your website more accessible to everyone.">Semantic HTML</a>
+        <a href="#lists" title="Ordered and unordered lists to make text in your website more organized.">Lists</a>
+        <a href="#tables" title="Perfect for organizing data.">Tables</a>
+        <a href="#advStructure" title="Prepare your website for styling with CSS.">Advanced Structure</a>
+        <a href="#semanticHTML" title="Increase your ranking in the SEO and make your website more accessible to everyone.">Semantic HTML</a>
     </nav>
     <header>
         <h1>HTML Cheatsheet</h1>
-        <h6>By Alessandro Sherhey</h6>
         <p>
             This website contains the most important tags you need while writing HTML code. Every tag is inside a card, to possibly make
             things easier to find and understand.
         </p>
     </header>
     <main>
-        <h2>Basic Structure</h2>
-        <div class="container" id="basicStructure">
+        <h2 id="basicStructure">Basic Structure</h2>
+        <div class="container">
             <section>
                 <h3>&lt;!DOCTYPE html&gt;</h3>
                 <p>
@@ -56,8 +55,8 @@
             </section>
         </div>
 
-        <h2>Headings</h2>
-        <div class="container" id="textStuff">
+        <h2 id="textStuff">Headings and Text</h2>
+        <div class="container">
             <section>
                 <h3>&lt;h1&gt;</h3>
                 <p>Headings can have 6 different tags. The first (this one) is the biggest heading while the last is the
@@ -83,6 +82,20 @@
                 <h3>&lt;h6&gt;</h3>
                 <p>The smallest tag of all.</p>
             </section>
+            <section>
+                <h3>&lt;p&gt;</h3>
+                <p>As the name suggests, this tag makes a paragraph in the website.</p>
+            </section>
+            <section class="moreWidth">
+                <h3>&lt;a&gt;</h3>
+                <p> 
+                    Instead this tag is used for links. Instead you'll add a href="" attribute for associating a link with what's 
+                    inside the &lt;a&gt;. For example if you want to write a paragraph that makes the user go to another website
+                    when clicked you need to write:<br>
+                    &lt;a href="yourLink"&gt;&lt;p&gt;Click here to go to another website!&lt;/p&gt;&lt;/a&gt;<br>
+                    where yourLink is the link of the external website.
+                </p>
+            </section>
         </div>
 
         <h2>Text Formatting</h2>
@@ -93,7 +106,7 @@
             </section>
             <section>
                 <h3>&lt;em&gt;</h3>
-                <p>This one makes text <em>italic</em>.</p>
+                <p>This one makes text <em>italic</em>. "em" stays for emphasis.</p>
             </section>
             <section>
                 <h3>&lt;u&gt;</h3>
@@ -111,7 +124,7 @@
             </section>
         </div>
 
-        <h2>Lists</h2>
+        <h2 id="lists">Lists</h2>
         <div class="container">
             <section>
                 <h3>&lt;ul&gt;</h3>
@@ -146,7 +159,110 @@
                 </p>
             </section>
         </div>
+
+        <h2 id="tables">Tables</h2>
+        <div class="container">
+            <section>
+                <h3>&lt;table&gt;</h3>
+                <p>
+                    This is where all the content of your table will go. However, this doesn't store the content itself. It serves
+                    as a container where all the tags for the structure of the table will go, like rows and data.
+                </p>
+            </section>
+            <section>
+                <h3>&lt;tr&gt;</h3>
+                <p>This tag creates a table row, hence the name.</p>
+            </section>
+            <section>
+                <h3>&lt;td&gt;</h3>
+                <p>This tag goes inside the &lt;td&gt; tag. Here is what will be displayed on the browser! "td" stands for Table Data.</p>
+            </section>
+        </div>
+
+        <h2 id="advStructure">Advanced Structure and Attributes</h2>
+        <div class="container">
+            <section>
+                <h3>&lt;div&gt;</h3>
+                <p>
+                    This tag is used for grouping different elements together. It is really useful when writing CSS code for the website
+                    since you can apply a single property for multiple elements, but that's not the only thing! You can do a lot more
+                    things with divs!
+                </p>
+            </section>
+            <section>
+                <h3>id="..."</h3>
+                <p>
+                    This is an <strong>attribute</strong>. It gives an element a specific "name" of your choice, so you can identify it
+                    easily when styling with CSS. <strong>Note: you can't give the same ID to more elements!</strong>
+                </p>
+            </section>
+            <section>
+                <h3>class="..."</h3>
+                <p>
+                    This is another attribute that is used for identifying items. But this is different: unlike the id attribute, <strong>
+                    the same class can be used for more elements!</strong>
+                </p>
+            </section>
+        </div>
+
+        <h2 id="semanticHTML">Semantic HTML</h2>
+        <p>
+            Semantic HTML gives <strong>a meaning</strong> to the code we write. For example a div, which is a general purpose element,
+            can be an &lt;article&gt;, a &lt;section&gt; an &lt;header&gt;, a &lt;footer&gt;, and much more!
+        </p>
+        <div class="container">
+            <section>
+                <h3>&lt;article&gt;</h3>
+                <p>
+                    This tag is commonly used in blogs and posts. It means that the text inside it is not related to other parts of the website.
+                </p>
+            </section>
+            <section>
+                <h3>&lt;nav&gt;</h3>
+                <p>
+                    As the name suggests, this is used for navigation bars, like the one on the top of the website!
+                </p>
+            </section>
+            <section>
+                <h3>&lt;header&gt;</h3>
+                <p>
+                    This tag is instead used for... headers!
+                </p>
+            </section>
+            <section>
+                <h3>&lt;main&gt;</h3>
+                <p>
+                    Inside this tag you'll write all the main content of the website.
+                </p>
+            </section>
+            <section>
+                <h3>&lt;footer&gt;</h3>
+                <p>
+                    And inside this one you'll write all the content of the footer.
+                </p>
+            </section>
+            <section>
+                <h3>&lt;header&gt;</h3>
+                <p>
+                    This tag is instead used for... headers!
+                </p>
+            </section>
+            <section>
+                <h3>&lt;section&gt;</h3>
+                <p>
+                    This tag is used for various sections of content. Imagine if there was a simple website with a whole book in it. Every
+                    chapter of the book could go inside the &lt;section&gt; tag!
+                </p>
+            </section>
+        </div>
     </main>
+    <footer>
+        <p>HTML Cheatsheet <strong>v1.0</strong></p>
+        <p>Website made with ❤️ by <a href="https://github.com/alessandro-sherhey">Alessandro Sherhey</a></p>
+        <p>This website is <strong>open source</strong>! If you want to see the source code you can go on this website's <a href="https://github.com/alessandro-sherhey/html-cheatsheet">GitHub repository</a>.</p>
+        <p>If you find any issues please <a href="https://github.com/alessandro-sherhey/html-cheatsheet/issues">write them in here</a>.</p>
+    </footer>
+
 </body>
 
 </html>
